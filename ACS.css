@@ -13,8 +13,8 @@ body {
 }
 
 .logo img {
-    max-height: 80px;
-    margin-right: 10px;
+    max-height: 50%;
+    margin-right: 50%;
 }
 
 .navbar {
