@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo img {
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: blue;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: left 0.3s ease-in-out;
+}
+
+.navbar.show-nav {
+    left: 0;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: green;
+    color: white;
+}
+
+.mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section-content {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* ... (existing CSS) ... */
+
+/* Show mobile menu icon only on screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding-top: 80px;
+        background-color: blue;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navbar.show-nav {
+        left: 0;
+    }
+}
+
+/* ... (remaining CSS) ... */
