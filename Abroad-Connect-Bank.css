@@ -77,28 +77,33 @@ body {
   .youtube-container h2 {
     color: orange;
   }
-  
-  .youtube-container {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-     margin: auto;
-     position: relative;
-     
-     
-  }
-  
-  .youtube-link-button {
-    display: inline-block;
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.content-container {
+    text-align: center; /* Center align the content */
+    margin-top: 20px; /* Add some top margin */
+}
+
+.love-story {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.youtube-container {
+    margin-top: 20px;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.youtube-link-button {
+    display: block;
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-  }
+    text-align: center;
+}
   
   .images-section {
     background-color: maroon;
