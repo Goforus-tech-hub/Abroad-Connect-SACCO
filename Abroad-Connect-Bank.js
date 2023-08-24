@@ -16,4 +16,15 @@ function toggleMenu() {
       readMoreButton.innerText = "Read More";
     }
   }
-  
+  // Get the logo element
+const logo = document.getElementById("logo");
+
+// Add a click event listener to the logo
+logo.addEventListener("click", () => {
+    // Reload the page
+    location.reload();
+});
+function refreshPage() {
+  // Reload the page
+  location.reload();
+}
