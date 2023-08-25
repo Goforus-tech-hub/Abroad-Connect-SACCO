@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Loans.css">
+    <title>Loan Application - Abroad Connect Bank</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LOAN APPLICATION</h1>
+        </header>
+        
+        <section id="loan-application">
+            <h2>Loan Application</h2>
+            <p>Apply for a loan by filling out the form below:</p>
+            <form id="loan-form">
+                <label for="savingsAmount">For how long you have saved? (in months)</label>
+                <input type="number" id="savingsAmount" name="savingsAmount" required>
+                
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+              <!-- ... (other code) ... -->
+
+<!-- Inside the form section for Loan Details -->
+<div class="form-section">
+    <h2>Loan Details</h2>
+    <label for="savings-amount">How much do you have in your Savings Account?</label>
+    <input type="number" id="savings-amount" name="savings-amount" required>
+    
+    <button type="button" id="calculate-loan" class="cta-button">Calculate Loan</button>
+    
+    <label for="loan-amount">Desired Loan Amount</label>
+    <input type="number" id="loan-amount" name="loan-amount" required>
+</div>
+
+<!-- ... (other code) ... -->
+
+                <label for="loanPurpose">Loan Purpose</label>
+                <select id="loanPurpose" name="loanPurpose" required>
+                    <option value="" disabled selected>Select a purpose</option>
+                    <option value="Home Improvement">Home Improvement</option>
+                    <option value="Education">Education</option>
+                    <option value="Business Investment">Business Investment</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <!-- ... (other code) ... -->
+
+<!-- Inside the form section for Address Verification -->
+<div class="form-section">
+    <h2>Address Verification</h2>
+    <label for="addressProof">Upload Bank/Bill Statement (PDF)</label>
+    <input type="file" id="addressProof" name="addressProof" accept=".pdf" required>
+</div>
+
+<!-- ... (other code) ... -->
+
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                <!-- Inside the form section for Additional Information -->
+<label for="businessPlan">Upload Business Proposal/Plan (PDF)</label>
+<input type="file" id="businessPlan" name="businessPlan" accept=".pdf">
+
+                <button type="submit" class="cta-button">Submit Application</button>
+            </form>
+        </section>
+
+        <!-- ... (remaining code) ... -->
+
+        <footer>
+            <p>🚀 Supercharge Your Savings with Abroad Connect Bank! Watch your savings multiply by 1000% to unlock the loan of your dreams. Join us today for financial empowerment. 💰💼 #FinancialFreedom #JoinUsNow</p>
+            <a href="https://chat.whatsapp.com/Ilfw23M5nlq6K6LpGPX3vT" class="cta-button">Join Us Now</a>
+        </footer>
+    </div>
+    <script src="Loans.js"></script>
+</body>
+</html>
